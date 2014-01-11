@@ -23,7 +23,7 @@ config ASHMEM
 
 config ANDROID_LOGGER
 	tristate "Android log driver"
-	default n
+	default y
 
 config ANDROID_PERSISTENT_RAM
 	bool
@@ -83,6 +83,6 @@ endif # if ANDROID
 config HUAWEI_FEATURE_NV_LOG_CONTROL
 	tristate "Android LOG"
 	depends on HUAWEI_KERNEL
-	default n
+	default y
 
 endmenu
